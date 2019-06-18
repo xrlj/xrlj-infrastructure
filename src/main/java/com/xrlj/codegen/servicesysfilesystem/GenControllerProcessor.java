@@ -1,22 +1,22 @@
-package com.xrlj.codegen.serviceauth;
+package com.xrlj.codegen.servicesysfilesystem;
 
-import com.xrlj.codegen.Constants.*;
+import com.xrlj.codegen.Constants;
 import com.xrlj.framework.core.processor.AbstractGenApiImplProcessor;
 
 public class GenControllerProcessor extends AbstractGenApiImplProcessor {
 
     @Override
     public String gencodeProjectName() {
-        return ServiceAuth.apiModuleName;
+        return Constants.ServiceSysFilesystem.apiModuleName;
     }
 
     @Override
     public String javaFileOputProjectName() {
-        return ServiceAuth.providerModuleName;
+        return Constants.ServiceSysFilesystem.providerModuleName;
     }
 
     @Override
     public String packagePath() {
-        return ServiceAuth.projectPackage.concat(".controller");
+        return Constants.ServiceSysFilesystem.projectPackage.concat(".controller");
     }
 }

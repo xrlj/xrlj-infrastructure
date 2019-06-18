@@ -23,7 +23,6 @@
         <dependency>
             <groupId>com.xrlj</groupId>
             <artifactId>xrlj-framework</artifactId>
-            <optional>true</optional>
         </dependency>
     </dependencies>
 
