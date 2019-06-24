@@ -1,6 +1,6 @@
-package com.xrlj.codegen.servicesysfilesystem;
+package com.xrlj.codegen.serviceusercentral;
 
-import com.xrlj.codegen.Constants.*;
+import com.xrlj.codegen.Constants.ServiceUsercentral;
 import com.xrlj.framework.core.processor.GenDBField2BeanProcessor;
 import com.xrlj.utils.PrintUtil;
 
@@ -12,7 +12,7 @@ public class GenDBFieldProcessor extends GenDBField2BeanProcessor {
 
     static {
         try {
-            Class.forName(ServiceSysFilesystem.DRIVER);
+            Class.forName(ServiceUsercentral.DRIVER);
         } catch (ClassNotFoundException e) {
             PrintUtil.println("加载数据库驱动失败……");
             e.printStackTrace();
@@ -23,7 +23,7 @@ public class GenDBFieldProcessor extends GenDBField2BeanProcessor {
     public Connection getConnection() {
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection(ServiceSysFilesystem.URL, ServiceSysFilesystem.USERNAME, ServiceSysFilesystem.PASSWORD);
+            conn = DriverManager.getConnection(ServiceUsercentral.URL, ServiceUsercentral.USERNAME, ServiceUsercentral.PASSWORD);
         } catch (SQLException e) {
             PrintUtil.println("获取数据库连接失败");
             e.printStackTrace();
@@ -33,6 +33,6 @@ public class GenDBFieldProcessor extends GenDBField2BeanProcessor {
 
     @Override
     public String getJavaFileOutPackagePath() {
-        return ServiceSysFilesystem.projectPackage.concat(".gen.db.tables");
+        return ServiceUsercentral.projectPackage.concat(".gen.db.tables");
     }
 }
