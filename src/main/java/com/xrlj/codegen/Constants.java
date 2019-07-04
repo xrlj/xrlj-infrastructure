@@ -28,8 +28,8 @@ public interface Constants {
 
         String projectName = "service-usercentral";
         String projectPackage = "com.xrlj.serviceusercentral";
-        String apiModuleName = Constants.getModuleName(projectName, "api");
-        String entitiesModuleName = Constants.getModuleName(projectName, "entities");
+        String apiModuleName = getModuleName(projectName, "api");
+        String entitiesModuleName = getModuleName(projectName, "entities");
         String providerModuleName = getModuleName(projectName, "provider");
 
         String DRIVER = "com.mysql.cj.jdbc.Driver";
