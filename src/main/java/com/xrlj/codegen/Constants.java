@@ -38,6 +38,14 @@ public interface Constants {
         String PASSWORD = "123456";
     }
 
+    interface ServiceSysOffDct {
+
+        String projectName = "service-sys-offdct";
+        String projectPackage = "com.xrlj.servicesysoffdct";
+        String apiModuleName = Constants.getModuleName(projectName, "api");
+        String providerModuleName = getModuleName(projectName, "provider");
+    }
+
     static String getModuleName(String p, String m) {
         return p.concat("-").concat(m);
     }
