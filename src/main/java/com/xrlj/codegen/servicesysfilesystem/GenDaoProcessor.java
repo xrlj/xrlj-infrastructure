@@ -19,4 +19,9 @@ public class GenDaoProcessor extends AbstractGenDaoProcessor {
     public String daoPackagePath() {
         return Constants.ServiceSysFilesystem.projectPackage.concat(".dao");
     }
+
+    @Override
+    public String entitiesPackage() {
+        return Constants.ServiceSysFilesystem.projectPackage.concat(".entities");
+    }
 }
