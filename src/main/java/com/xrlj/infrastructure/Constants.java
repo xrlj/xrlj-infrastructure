@@ -10,5 +10,6 @@ public final class Constants {
         String JWT_CLAIM_KEY_USER_TYPE = "userType";
         String JWT_CLAIM_KEY_USER_ID = "userId";
         String JWT_CLAIM_KEY_CLIENT_ID = "clientid";
+        String JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE = "clientDeviceType";
     }
 }
