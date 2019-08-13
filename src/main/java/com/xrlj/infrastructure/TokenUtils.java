@@ -29,6 +29,12 @@ public final class TokenUtils {
         return userType;
     }
 
+    public static int getAppType(String token) {
+        Objects.requireNonNull(token);
+        int appType = JwtUtils.getPubClaimValue(token, Constants.JWT.JWT_CLAIM_KEY_APP_TYPE, Integer.class);
+        return appType;
+    }
+
     public static String getClientId(String token) {
         Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
         String clientId = JwtUtils.getPubClaimValue(token, Constants.JWT.JWT_CLAIM_KEY_CLIENT_ID, String.class);
