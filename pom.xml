@@ -24,6 +24,10 @@
             <groupId>com.xrlj</groupId>
             <artifactId>xrlj-framework</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.xrlj</groupId>
+            <artifactId>xrlj-codegen</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
