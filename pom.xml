@@ -28,17 +28,6 @@
             <groupId>com.xrlj</groupId>
             <artifactId>xrlj-codegen</artifactId>
         </dependency>
-
-        <!--feign方式消费服务-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-        <!--hystrix熔断器-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
