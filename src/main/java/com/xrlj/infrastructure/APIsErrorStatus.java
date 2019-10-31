@@ -9,7 +9,8 @@ public enum APIsErrorStatus {
 
     APP_NOT_FIND(2000, "应用程序未注册"),
     APP_NOT_CHECK(2001, "应用程序未审核通过"),
-    APP_NOT_FIND_OR_CHECK(2002, "应用程序未注册或未审核");
+    APP_NOT_FIND_OR_CHECK(2002, "应用程序未注册或未审核"),
+    LOGIN_USERNAME_OR_PWD_ERROR(2010, "用户名或者密码错误");
 
     private final int status;
     private final String msg;

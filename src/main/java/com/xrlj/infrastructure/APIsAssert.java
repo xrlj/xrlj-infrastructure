@@ -15,4 +15,8 @@ public final class APIsAssert {
     public static ApiException appNotFindOrCheck() {
         throw APIs.error(APIsErrorStatus.APP_NOT_FIND_OR_CHECK.status(),APIsErrorStatus.APP_NOT_FIND_OR_CHECK.msg(), null);
     }
+
+    public static ApiException loginError() {
+        throw APIs.error(APIsErrorStatus.LOGIN_USERNAME_OR_PWD_ERROR.status(),APIsErrorStatus.LOGIN_USERNAME_OR_PWD_ERROR.msg(), null);
+    }
 }
