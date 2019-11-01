@@ -19,4 +19,12 @@ public final class APIsAssert {
     public static ApiException loginError() {
         throw APIs.error(APIsErrorStatus.LOGIN_USERNAME_OR_PWD_ERROR.status(),APIsErrorStatus.LOGIN_USERNAME_OR_PWD_ERROR.msg(), null);
     }
+
+    public static ApiException fileNotFind() {
+        throw APIs.error(APIsErrorStatus.FILE_NOT_FIND.status(),APIsErrorStatus.FILE_NOT_FIND.msg(), null);
+    }
+
+    public static ApiException fileUploadError() {
+        throw APIs.error(APIsErrorStatus.FILE_UPLOAD_ERROR.status(),APIsErrorStatus.FILE_UPLOAD_ERROR.msg(), null);
+    }
 }
