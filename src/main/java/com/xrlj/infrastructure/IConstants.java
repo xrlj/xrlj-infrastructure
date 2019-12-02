@@ -1,5 +1,7 @@
 package com.xrlj.infrastructure;
 
+import com.xrlj.utils.security.Md5Utils;
+
 public class IConstants {
 
     public interface JWT {
@@ -13,8 +15,8 @@ public class IConstants {
         String JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE = "clientDeviceType";
         String JWT_CLAIM_KEY_APP_TYPE = "appType";
 
-        static String jwtRedisKey(String username) {
-            String jwt_redis_key = JWT.JWT_REDIS_KEY_PREFIX.concat(username);
+        static String jwtRedisKey(String username, String password) {
+            String jwt_redis_key = JWT.JWT_REDIS_KEY_PREFIX.concat(Md5Utils.getJdkMD5Str(username.concat(":").concat(password)));
             return jwt_redis_key;
         }
 
