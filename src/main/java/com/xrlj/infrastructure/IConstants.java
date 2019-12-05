@@ -15,9 +15,10 @@ public class IConstants {
         String JWT_CLAIM_KEY_CLIENT_ID = "clientid";
         String JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE = "clientDeviceType";
         String JWT_CLAIM_KEY_APP_TYPE = "appType";
+        String JWT_KEY = "jwt-key";
 
         static String jwtRedisKey(String username, String password) {
-            String jwt_redis_key = JWT.JWT_REDIS_KEY_PREFIX.concat(Base64Utils.base64Encode(username.concat(":").concat(password)));
+            String jwt_redis_key = JWT_REDIS_KEY_PREFIX.concat(Md5Utils.getCCMD5Str(username+password));
             return jwt_redis_key;
         }
 
