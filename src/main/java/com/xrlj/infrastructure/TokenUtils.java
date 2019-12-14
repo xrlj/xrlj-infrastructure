@@ -1,5 +1,6 @@
 package com.xrlj.infrastructure;
 
+import com.xrlj.framework.base.BaseEntity;
 import com.xrlj.utils.authenticate.JwtUtils;
 
 import java.util.Objects;
@@ -45,5 +46,11 @@ public final class TokenUtils {
         Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
         String clientDeviceType = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE, String.class);
         return clientDeviceType;
+    }
+
+    public static BaseEntity.ClientDeviceType getClientDeviceTypeEnum(String token) {
+        Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
+        String clientDeviceType = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE, String.class);
+        return BaseEntity.ClientDeviceType.getInstance(clientDeviceType);
     }
 }
