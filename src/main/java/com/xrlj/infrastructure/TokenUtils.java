@@ -18,6 +18,12 @@ public final class TokenUtils {
         return userId;
     }
 
+    public static Long getEptId(String token) {
+        Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
+        Long eptId = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_EPT_ID, Long.class);
+        return eptId;
+    }
+
     public static String getUsername(String token) {
         Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
         String username = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_USERNAME, String.class);
