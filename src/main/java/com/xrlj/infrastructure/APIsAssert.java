@@ -27,4 +27,8 @@ public final class APIsAssert {
     public static ApiException fileUploadError() {
         throw APIs.error(APIsErrorStatus.FILE_UPLOAD_ERROR.status(),APIsErrorStatus.FILE_UPLOAD_ERROR.msg(), null);
     }
+
+    public static ApiException clientRequestFailError() {
+        throw APIs.error(APIsErrorStatus.CLIENT_REQUEST_FAIL.status(),APIsErrorStatus.CLIENT_REQUEST_FAIL.msg(), null);
+    }
 }
