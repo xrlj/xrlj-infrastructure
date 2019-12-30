@@ -8,6 +8,10 @@ import com.xrlj.framework.spring.mvc.api.ApiException;
  */
 public final class APIsAssert {
 
+    public static ApiException fieldNotFind(String fieldName) {
+        throw APIs.error(APIsErrorStatus.FIELD_NOT_FIND.status(),String.format(APIsErrorStatus.FIELD_NOT_FIND.msg(), fieldName), null);
+    }
+
     public static ApiException appNotFind() {
         throw APIs.error(APIsErrorStatus.APP_NOT_FIND.status(),APIsErrorStatus.APP_NOT_FIND.msg(), null);
     }

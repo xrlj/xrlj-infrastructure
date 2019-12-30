@@ -10,6 +10,7 @@ public enum APIsErrorStatus {
     APP_NOT_FIND(2000, "应用程序未注册"),
     APP_NOT_CHECK(2001, "应用程序未审核通过"),
     APP_NOT_FIND_OR_CHECK(2002, "应用程序未注册或未审核"),
+    FIELD_NOT_FIND(2003, "缺少必传参数%s"),
     LOGIN_USERNAME_OR_PWD_ERROR(2010, "用户名或者密码错误"),
     FILE_NOT_FIND(2015, "文件不存在"),
     FILE_UPLOAD_ERROR(2016, "上传文件失败"),

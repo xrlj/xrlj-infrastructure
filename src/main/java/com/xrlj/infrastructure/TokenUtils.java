@@ -20,7 +20,7 @@ public final class TokenUtils {
 
     public static Long getEptId(String token) {
         Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
-        Long eptId = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_EPT_ID, Long.class);
+        Long eptId = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_ETP_ID, Long.class);
         return eptId;
     }
 
