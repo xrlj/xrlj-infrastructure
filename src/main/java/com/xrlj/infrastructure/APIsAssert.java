@@ -35,4 +35,8 @@ public final class APIsAssert {
     public static ApiException clientRequestFailError() {
         throw APIs.error(APIsErrorStatus.CLIENT_REQUEST_FAIL.status(),APIsErrorStatus.CLIENT_REQUEST_FAIL.msg(), null);
     }
+
+    public static ApiException authorizationNotSupport() {
+        throw APIs.error(APIsErrorStatus.AUTHORIZATION_NOT_SUPPORT.status(),APIsErrorStatus.AUTHORIZATION_NOT_SUPPORT.msg(), null);
+    }
 }
