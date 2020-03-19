@@ -42,21 +42,21 @@ public final class TokenUtils {
         return appType;
     }
 
-    public static String getClientId(String token) {
+   /* public static String getClientId(String token) {
         Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
         String clientId = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_CLIENT_ID, String.class);
         return clientId;
-    }
+    }*/
 
-    public static String getClientDeviceType(String token) {
+    /*public static String getClientDeviceType(String token) {
         Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
         String clientDeviceType = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE, String.class);
         return clientDeviceType;
-    }
+    }*/
 
-    public static BaseEntity.ClientDeviceType getClientDeviceTypeEnum(String token) {
+    /*public static BaseEntity.ClientDeviceType getClientDeviceTypeEnum(String token) {
         Objects.requireNonNull(token, TOKEN_NOT_NULL_MSG);
         String clientDeviceType = JwtUtils.getPubClaimValue(token, IConstants.JWT.JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE, String.class);
         return BaseEntity.ClientDeviceType.getInstance(clientDeviceType);
-    }
+    }*/
 }

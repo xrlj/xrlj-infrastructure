@@ -13,8 +13,8 @@ public class IConstants {
         String JWT_CLAIM_KEY_USER_TYPE = "userType";
         String JWT_CLAIM_KEY_USER_ID = "userId";
         String JWT_CLAIM_KEY_ETP_ID = "etpId"; // 企业id
-        String JWT_CLAIM_KEY_CLIENT_ID = "clientid";
-        String JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE = "clientDeviceType";
+//        String JWT_CLAIM_KEY_CLIENT_ID = "clientid";
+//        String JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE = "clientDeviceType";
         String JWT_CLAIM_KEY_APP_TYPE = "appType";
         String JWT_KEY = "jwt-key";
 
