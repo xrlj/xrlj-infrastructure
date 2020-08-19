@@ -1,6 +1,5 @@
 package com.xrlj.infrastructure;
 
-import com.xrlj.utils.security.Base64Utils;
 import com.xrlj.utils.security.Md5Utils;
 
 public class IConstants {
