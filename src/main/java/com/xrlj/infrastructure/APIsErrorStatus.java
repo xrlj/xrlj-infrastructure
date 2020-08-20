@@ -14,6 +14,9 @@ public enum APIsErrorStatus {
     LOGIN_USERNAME_OR_PWD_ERROR(2010, "用户名或者密码错误"),
     FILE_NOT_FIND(2015, "文件不存在"),
     FILE_UPLOAD_ERROR(2016, "上传文件失败"),
+    SMS_AUTH_CODE_ERROR(2017, "短信验证码已发送,请勿重复操作"),
+    SMS_AUTH_CODE_EXPIRED(2018, "短信验证码已过期"),
+    SMS_AUTH_CODE_EQ_NOT(2019, "短信验证码错误"),
     CLIENT_REQUEST_FAIL(3000, "服务请求失败，稍后再试！"),
     AUTHORIZATION_NOT_SUPPORT(403, "没有访问权限");
 
