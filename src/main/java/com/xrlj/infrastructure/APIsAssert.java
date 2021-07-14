@@ -3,10 +3,16 @@ package com.xrlj.infrastructure;
 import com.xrlj.framework.spring.mvc.api.APIs;
 import com.xrlj.framework.spring.mvc.api.ApiException;
 
+import java.util.Objects;
+
 /**
  * 通用的统一api错误提示。
  */
 public final class APIsAssert {
+
+    public static ApiException unknownError() {
+        throw APIs.error(APIsErrorStatus.UN_KNOWN.status(), APIsErrorStatus.UN_KNOWN.msg(), null);
+    }
 
     public static ApiException smsAuthCodeEqNot() {
         throw APIs.error(APIsErrorStatus.SMS_AUTH_CODE_EQ_NOT.status(), APIsErrorStatus.SMS_AUTH_CODE_EQ_NOT.msg(), null);
@@ -22,6 +28,18 @@ public final class APIsAssert {
 
     public static ApiException fieldNotFind(String fieldName) {
         throw APIs.error(APIsErrorStatus.FIELD_NOT_FIND.status(), String.format(APIsErrorStatus.FIELD_NOT_FIND.msg(), fieldName), null);
+    }
+
+    public static void fieldNotNull(Object field, String filedName) {
+        if (field != null) {
+            return;
+        }
+
+        if (field instanceof String && !"".equals(field)) {
+            return;
+        }
+
+        throw APIs.error(APIsErrorStatus.FIELD_NOT_NULL.status(), String.format(APIsErrorStatus.FIELD_NOT_NULL.msg(), filedName), null);
     }
 
     public static ApiException appNotFind() {
