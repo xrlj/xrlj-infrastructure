@@ -13,8 +13,10 @@ public enum UserType {
     CORE(2, "核心企业"),
     MEMBER(3, "成员单位"),
     SUPPLIER(4, "供应商"),
-    SPV(5, "计划管理人"),
-    BUYER(6, "买方"),
+    DEBTOR(5, "债务加入方"),
+    LAW(6, "律所"),
+    SPV(7, "计划管理人"),
+    BUYER(8, "买方"),
     INDIVIDUAL(9, "普通会员");
 
     private final int type;
