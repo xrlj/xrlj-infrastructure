@@ -13,7 +13,7 @@ public enum APIsErrorStatus {
     APP_NOT_FIND_OR_CHECK(2002, "应用程序未注册或未审核"),
     FIELD_NOT_FIND(2003, "缺少必传参数%s"),
     FIELD_NOT_NULL(2004, "必传参数[%s]非空"),
-    RECORD_NOT_EXIST(2005, "记录不存在"),
+    RECORD_NOT_EXIST(2005, "记录[%d]不存在"),
     LOGIN_USERNAME_OR_PWD_ERROR(2010, "登录名或密码错误"),
     FILE_NOT_FIND(2015, "文件不存在"),
     FILE_UPLOAD_ERROR(2016, "上传文件失败"),
