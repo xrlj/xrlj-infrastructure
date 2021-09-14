@@ -10,6 +10,10 @@ import java.util.Objects;
  */
 public final class APIsAssert {
 
+    public static ApiException captChaError() {
+        throw APIs.error(APIsErrorStatus.CAPTCHA_ERROR.status(), APIsErrorStatus.CAPTCHA_ERROR.msg(), null);
+    }
+
     public static ApiException notExitRecord(Long id) {
         throw APIs.error(APIsErrorStatus.RECORD_NOT_EXIST.status(), id != null ? String.format(APIsErrorStatus.RECORD_NOT_EXIST.msg(), id) : "记录不存在", null);
     }

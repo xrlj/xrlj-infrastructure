@@ -21,6 +21,7 @@ public enum APIsErrorStatus {
     SMS_AUTH_CODE_EXPIRED(2018, "短信验证码已过期"),
     SMS_AUTH_CODE_EQ_NOT(2019, "短信验证码错误"),
     CLIENT_REQUEST_FAIL(3000, "服务请求失败，稍后再试！"),
+    CAPTCHA_ERROR(3600, "图形验证码错误，或已失效"),
     AUTHORIZATION_NOT_SUPPORT(403, "没有访问权限");
 
     private final int status;
