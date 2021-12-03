@@ -39,11 +39,11 @@ public final class APIsAssert {
     }
 
     public static void fieldNotNull(Object field, String filedName) {
-        if (field != null) {
+        if (field != null && field instanceof String && !"".equals(field)) {
             return;
         }
 
-        if (field instanceof String && !"".equals(field)) {
+        if (field != null) {
             return;
         }
 
