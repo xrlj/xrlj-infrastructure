@@ -11,7 +11,7 @@ public enum UserType {
     ADMIN(0, "总后台"),
     FACTOR(1, "保理商"),
     CORE(2, "核心企业"),
-    MEMBER(3, "成员单位"),
+    MEMBER(3, "项目公司"),
     SUPPLIER(4, "供应商"),
     DEBTOR(5, "债务加入方"),
     LAW(6, "律所"),
