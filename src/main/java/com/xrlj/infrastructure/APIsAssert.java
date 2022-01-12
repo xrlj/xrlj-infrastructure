@@ -10,6 +10,14 @@ import java.util.Objects;
  */
 public final class APIsAssert {
 
+    public static void paymentBillGetError() {
+        throw APIs.error(APIsErrorStatus.PAYMENT_BILL_GET_ERROR.status(), APIsErrorStatus.PAYMENT_BILL_GET_ERROR.msg(), null);
+    }
+
+    public static ApiException getThirdOpenApiConfFail() {
+        throw APIs.error(APIsErrorStatus.THIRD_OPEN_API_CONF_FAIL.status(), APIsErrorStatus.THIRD_OPEN_API_CONF_FAIL.msg(), null);
+    }
+
     public static ApiException captChaError() {
         throw APIs.error(APIsErrorStatus.CAPTCHA_ERROR.status(), APIsErrorStatus.CAPTCHA_ERROR.msg(), null);
     }

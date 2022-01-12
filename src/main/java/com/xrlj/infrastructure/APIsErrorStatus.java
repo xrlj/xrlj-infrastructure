@@ -22,6 +22,8 @@ public enum APIsErrorStatus {
     SMS_AUTH_CODE_EQ_NOT(2019, "短信验证码错误"),
     CLIENT_REQUEST_FAIL(3000, "服务请求失败，稍后再试！"),
     CAPTCHA_ERROR(3600, "图形验证码错误，或已失效"),
+    THIRD_OPEN_API_CONF_FAIL(20001, "无法获取第三方开放接口配置信息"),
+    PAYMENT_BILL_GET_ERROR(20301, "获取付款单信息失败"),
     AUTHORIZATION_NOT_SUPPORT(403, "没有访问权限");
 
     private final int status;
