@@ -12,6 +12,7 @@ public class IConstants {
         String JWT_CLAIM_KEY_USER_TYPE = "userType";
         String JWT_CLAIM_KEY_USER_ID = "userId";
         String JWT_CLAIM_KEY_ETP_ID = "etpId"; // 企业id
+        String JWT_CLAIM_KEY_ETP_TYPE_DEFAULT = "etp_type_default"; // 默认企业类型
         String JWT_CLAIM_KEY_ETP_NAME = "etpName"; // 企业唯一名称
 //        String JWT_CLAIM_KEY_CLIENT_ID = "clientid";
 //        String JWT_CLAIM_KEY_CLIENT_DEVICE_TYPE = "clientDeviceType";
